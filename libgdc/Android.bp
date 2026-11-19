@@ -36,7 +36,10 @@ cc_library_shared {
 
     header_libs: [
         "device_kernel_headers",
+        "libexynos_headers",
     ],
+
+    export_header_lib_headers: ["libexynos_headers"],
 
     include_dirs: ["hardware/samsung_slsi-linaro/exynos/include"],
 
