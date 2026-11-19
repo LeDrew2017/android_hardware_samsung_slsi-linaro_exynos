@@ -46,6 +46,9 @@ cc_library_headers {
         "libhardware_headers",
     ],
 
+    generated_headers: ["generated_kernel_includes"],
+    export_generated_headers: ["generated_kernel_includes"],
+
     defaults: [
         "libexynos_headers_c2_defaults",
     ],
